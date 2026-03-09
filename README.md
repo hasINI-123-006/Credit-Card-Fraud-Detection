@@ -14,7 +14,7 @@ Dashboard Preview
 ![Dataset Overview](images/datasetpreview1.png)
 ![Dashboard](images/dashboard1.png)
 ![Dashboard](images/dashboard2.png)
-![Fraud Transactions](images/fraudtransaction3.png)
+![Fraud Transactions](images/fraudtransactions3.png)
 ![Transaction Risk Analysis](images/transactionRiskAnalysis4.png)
 
 Key Features
@@ -74,3 +74,4 @@ Upload the dataset through the dashboard to analyze fraud predictions.
 Tech Stack
 
 Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
+
