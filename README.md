@@ -1,77 +1,108 @@
-Credit Card Fraud Detection Dashboard
+# 💳 Credit Card Fraud Detection Dashboard
 
 An interactive machine learning dashboard that detects potentially fraudulent credit card transactions and visualizes transaction risk patterns.
 
-Overview
+---
 
-Credit card fraud detection is a classic imbalanced classification problem where fraudulent transactions represent a very small fraction of all transactions.
-This project builds a Random Forest based fraud detection model and integrates it into an interactive Streamlit dashboard for analyzing transaction datasets.
+## Overview
 
-The dashboard allows users to upload transaction data, run fraud predictions, and explore the results through visualizations and summaries.
+Credit card fraud detection is a classic **imbalanced classification problem** where fraudulent transactions represent a very small fraction of all transactions.
 
-Dashboard Preview
+This project builds a **Random Forest based fraud detection model** and integrates it into an **interactive Streamlit dashboard** for analyzing transaction datasets.
 
-![Dataset Overview](images/datasetpreview1.png)
+The dashboard allows users to upload transaction data, run fraud predictions, and explore results through visualizations and summaries.
+
+---
+
+## Dashboard Preview
+
+### Dataset Overview
+![Dataset Preview](images/datasetpreview1.png)
+
+### Dashboard Overview
 ![Dashboard](images/dashboard1.png)
-![Dashboard](images/dashboard2.png)
+
+### Fraud Distribution & Analysis
+![Dashboard Analysis](images/dashboard2.png)
+
+### Fraud Transactions
 ![Fraud Transactions](images/fraudtransactions3.png)
-![Transaction Risk Analysis](images/transactionRiskAnalysis4.png)
 
-Key Features
+### Transaction Risk Analysis
+![Risk Analysis](images/transactionRiskAnalysis4.png)
 
-Upload transaction dataset (CSV)
+---
 
-Fraud prediction using a trained ML model
+## Key Features
 
-Detection summary metrics (Total Transactions, Fraud Detected, Fraud Rate)
+- Upload transaction dataset (CSV)
+- Fraud prediction using a trained ML model
+- Detection summary metrics  
+  - Total Transactions  
+  - Fraud Detected  
+  - Fraud Rate
+- Fraud distribution visualization
+- Feature importance analysis
+- Table of detected fraudulent transactions
 
-Fraud distribution visualization
+---
 
-Feature importance analysis
-
-Table of detected fraudulent transactions
-
-
-Dataset
+## Dataset
 
 The model was trained using the public dataset available on Kaggle:
 
-Credit Card Fraud Detection Dataset
+**Credit Card Fraud Detection Dataset**
+
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
-The dataset contains anonymized transaction features (V1–V28) along with transaction amount and class labels.
+The dataset contains anonymized transaction features (`V1–V28`) along with transaction amount and class labels.
 
-Project Structure
+---
+
+## Project Structure
+
+
 Credit-Card-Fraud-Detection
 │
-├── cdfd_app.py    
+├── cdfd_app.py
+│
 ├── images
-     └── datasetpreview1.png
-     └── dashboard1.png
-     └── dashboard2.png
-     └── fraudtransaction3.png
-     └── transactionRiskAnalysis4.png           
-├── fraud_detection_random_forest.pkl  
-├── credit-card-fraud-detection.ipynb 
+│ ├── datasetpreview1.png
+│ ├── dashboard1.png
+│ ├── dashboard2.png
+│ ├── fraudtransactions3.png
+│ └── transactionRiskAnalysis4.png
+│
+├── fraud_detection_random_forest.pkl
+├── credit-card-fraud-detection.ipynb
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 │
-└── .streamlit/
-    └── config.toml
-Running the Project
+└── .streamlit
+│ ├── config.toml
 
-Install dependencies:
+
+---
+
+## Running the Project
+
+Install dependencies
+
 
 pip install -r requirements.txt
 
-Run the dashboard:
+
+Run the Streamlit dashboard
+
 
 streamlit run cdfd_app.py
 
+
 Upload the dataset through the dashboard to analyze fraud predictions.
 
-Tech Stack
+---
+
+## Tech Stack
 
 Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
-
