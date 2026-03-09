@@ -25,10 +25,8 @@ The dashboard allows users to upload transaction data, run fraud predictions, an
 ### Fraud Distribution & Analysis
 ![Dashboard Analysis](images/dashboard2.png)
 
-### Fraud Transactions
-![Fraud Transactions](images/fraudtransactions3.png)
+![Fraud Transaction](images/fraudtransactions3.png)
 
-### Transaction Risk Analysis
 ![Risk Analysis](images/transactionRiskAnalysis4.png)
 
 ---
@@ -85,7 +83,7 @@ Credit-Card-Fraud-Detection
 
 ---
 
-## Running the Project
+## How to run the project
 
 Install dependencies
 
@@ -106,3 +104,4 @@ Upload the dataset through the dashboard to analyze fraud predictions.
 ## Tech Stack
 
 Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
+
