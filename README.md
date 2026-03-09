@@ -59,26 +59,26 @@ The dataset contains anonymized transaction features (`V1–V28`) along with tra
 
 ## Project Structure
 
-
+```
 Credit-Card-Fraud-Detection
 │
-├── cdfd_app.py
-│
 ├── images
-│ ├── datasetpreview1.png
-│ ├── dashboard1.png
-│ ├── dashboard2.png
-│ ├── fraudtransactions3.png
-│ └── transactionRiskAnalysis4.png
+│   ├── datasetpreview1.png
+│   ├── dashboard1.png
+│   ├── dashboard2.png
+│   ├── fraudtransactions3.png
+│   └── transactionRiskAnalysis4.png
 │
-├── fraud_detection_random_forest.pkl
+├── cdfd_app.py
 ├── credit-card-fraud-detection.ipynb
+├── fraud_detection_random_forest.pkl
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 │
 └── .streamlit
-│ ├── config.toml
+    └── config.toml
+```
 
 
 ---
@@ -104,4 +104,5 @@ Upload the dataset through the dashboard to analyze fraud predictions.
 ## Tech Stack
 
 Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
+
 
