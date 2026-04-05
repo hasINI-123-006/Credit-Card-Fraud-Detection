@@ -1,49 +1,55 @@
-# 💳 Credit Card Fraud Detection Dashboard
+#  Credit Card Fraud Detection & Risk Analysis
 
-An interactive machine learning dashboard that detects potentially fraudulent credit card transactions and visualizes transaction risk patterns.
-
----
-
-## Overview
-
-Credit card fraud detection is a classic **imbalanced classification problem** where fraudulent transactions represent a very small fraction of all transactions.
-
-This project builds a **Random Forest based fraud detection model** and integrates it into an **interactive Streamlit dashboard** for analyzing transaction datasets.
-
-The dashboard allows users to upload transaction data, run fraud predictions, and explore results through visualizations and summaries.
+Machine Learning-powered fraud detection and risk analysis dashboard for identifying suspicious credit card transactions.
 
 ---
 
-## Dashboard Preview
+##  Overview
 
-### Dataset Overview
-![Dataset Preview](images/datasetpreview1.png)
+Financial fraud detection is a critical challenge due to the highly **imbalanced nature of transaction data**, where fraudulent activities are rare but high-impact.
 
-### Dashboard Overview
-![Dashboard](images/dashboard1.png)
+This project implements a **Random Forest-based classification model** integrated with an **interactive Streamlit dashboard** to:
 
-### Fraud Distribution & Analysis
-![Dashboard Analysis](images/dashboard2.png)
+- Detect fraudulent transactions  
+- Assign probability-based risk scores  
+- Provide actionable insights through visual analytics  
 
-![Fraud Transaction](images/fraudtransactions3.png)
+The system supports both **dataset-level analysis** and **single transaction evaluation**, making it practical and scalable.
 
-![Risk Analysis](images/transactionRiskAnalysis4.png)
+---
+##  Key Features
+
+-  Upload and analyze transaction datasets (CSV)
+-  Machine Learning-based fraud prediction (Random Forest)
+-  Dynamic dashboard with interactive visualizations
+-  Risk segmentation: Low / Medium / High
+-  Fraud probability distribution and trend analysis
+-  Feature importance for model interpretability
+-  Single transaction evaluation with:
+  - Prediction (Fraud / Legitimate)
+  - Confidence Score
+  - Anomaly Score
+  - Key feature influence insights
+-  Export high-risk transaction reports
 
 ---
 
-## Key Features
+## Dashboard Overview
+![Dashboard Overview](images/DashboardOverview.png)
 
-- Upload transaction dataset (CSV)
-- Fraud prediction using a trained ML model
-- Detection summary metrics  
-  - Total Transactions  
-  - Fraud Detected  
-  - Fraud Rate
-- Fraud distribution visualization
-- Feature importance analysis
-- Table of detected fraudulent transactions
+### Real-Time Transaction Evaluation
+![Single Transaction Evaluation](images/Real-Timetransactionevaluation.png)
+
+#### Prediction Explanation
+![Prediction Explanation](images/PredictionExplanation.png)
+
+### Data Analytics Summary
+
+![Analytics Summary](images/DataAnalyticsSummary.png)
 
 ---
+
+
 
 ## Dataset
 
@@ -53,7 +59,11 @@ The model was trained using the public dataset available on Kaggle:
 
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
-The dataset contains anonymized transaction features (`V1–V28`) along with transaction amount and class labels.
+### Dataset Characteristics:
+- 284,807 transactions  
+- 492 fraud cases (~0.17%)  
+- Features: `V1–V28` (anonymized), `Amount`, `Time`
+
 
 ---
 
@@ -63,11 +73,10 @@ The dataset contains anonymized transaction features (`V1–V28`) along with tra
 Credit-Card-Fraud-Detection
 │
 ├── images
-│   ├── datasetpreview1.png
-│   ├── dashboard1.png
-│   ├── dashboard2.png
-│   ├── fraudtransactions3.png
-│   └── transactionRiskAnalysis4.png
+│   ├── DashboardOverview.png
+│   ├── Real-Timetransactionevaluation.png
+│   ├── PredictionExplanation.png
+│   ├── DataAnalyticsSummary.png
 │
 ├── cdfd_app.py
 ├── credit-card-fraud-detection.ipynb
@@ -105,4 +114,14 @@ Upload the dataset through the dashboard to analyze fraud predictions.
 
 Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
 
+---
 
+##  Future Enhancements
+
+*  Real-time Fraud Detection:** Transition from batch processing to real-time inference by integrating streaming data pipelines using **Apache Kafka** or RESTful APIs.
+    
+*  Advanced Modeling:** Implement and tune high-performance algorithms such as **XGBoost**, **LightGBM**, and **Deep Neural Networks** to improve detection precision and recall.
+    
+*  Explainable AI (XAI):** Integrate **SHAP** (SHapley Additive exPlanations) or **LIME** to provide transparency into "black-box" model decisions, ensuring each fraud alert is interpretable.
+    
+*  Model Deployment:** Package the model using **Flask** or **FastAPI** to expose it as a scalable REST API, enabling seamless integration with front-end applications or third-party services.
