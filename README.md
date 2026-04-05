@@ -26,26 +26,26 @@ The system supports both **dataset-level analysis** and **single transaction eva
 -  Fraud probability distribution and trend analysis
 -  Feature importance for model interpretability
 -  Single transaction evaluation with:
-  - Prediction (Fraud / Legitimate)
-  - Confidence Score
-  - Anomaly Score
-  - Key feature influence insights
+    -- Prediction (Fraud / Legitimate)
+    -- Confidence Score
+    -- Anomaly Score
+    -- Key feature influence insights
 -  Export high-risk transaction reports
 
 ---
 
 ## Dashboard Overview
-![Dashboard Overview](images/DashboardOverview.png)
+![DashboardOverview](images/DashboardOverview.png)
 
 ### Real-Time Transaction Evaluation
-![Single Transaction Evaluation](images/Real-Timetransactionevaluation.png)
+![Real-Timetransactionevaluation](images/Real-Timetransactionevaluation.png)
 
 #### Prediction Explanation
-![Prediction Explanation](images/PredictionExplanation.png)
+![PredictionExplanation](images/PredictionExplanation.png)
 
 ### Data Analytics Summary
 
-![Analytics Summary](images/DataAnalyticsSummary.png)
+![DataAnalyticsSummary](images/DataAnalyticsSummary.png)
 
 ---
 
@@ -118,10 +118,10 @@ Python • Streamlit • Scikit-learn • Pandas • Plotly • Matplotlib
 
 ##  Future Enhancements
 
-*  Real-time Fraud Detection:** Transition from batch processing to real-time inference by integrating streaming data pipelines using **Apache Kafka** or RESTful APIs.
+*  **Real-time Fraud Detection:** Transition from batch processing to real-time inference by integrating streaming data pipelines using **Apache Kafka** or RESTful APIs.
     
-*  Advanced Modeling:** Implement and tune high-performance algorithms such as **XGBoost**, **LightGBM**, and **Deep Neural Networks** to improve detection precision and recall.
+*  **Advanced Modeling:** Implement and tune high-performance algorithms such as **XGBoost**, **LightGBM**, and **Deep Neural Networks** to improve detection precision and recall.
     
-*  Explainable AI (XAI):** Integrate **SHAP** (SHapley Additive exPlanations) or **LIME** to provide transparency into "black-box" model decisions, ensuring each fraud alert is interpretable.
+*  **Explainable AI (XAI):** Integrate **SHAP** (SHapley Additive exPlanations) or **LIME** to provide transparency into "black-box" model decisions, ensuring each fraud alert is interpretable.
     
-*  Model Deployment:** Package the model using **Flask** or **FastAPI** to expose it as a scalable REST API, enabling seamless integration with front-end applications or third-party services.
+*  **Model Deployment:** Package the model using **Flask** or **FastAPI** to expose it as a scalable REST API, enabling seamless integration with front-end applications or third-party services.
