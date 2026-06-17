@@ -94,6 +94,10 @@ if uploaded_file:
 
     predictions = model.predict(X)
     probabilities = model.predict_proba(X)[:, 1]
+    st.write("NEW VERSION LOADED")
+
+    data["Prediction"] = predictions
+    data["Fraud Probability"] = probabilities
 
     def risk_label(p):
         if p < 0.3:
