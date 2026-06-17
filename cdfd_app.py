@@ -85,15 +85,15 @@ original_data = None
 
 if uploaded_file:
     data = pd.read_csv(uploaded_file)
+
+    data = data.head(1000)  
+
     original_data = data.copy()
 
     X = data.drop("Class", axis=1, errors="ignore")
 
     predictions = model.predict(X)
     probabilities = model.predict_proba(X)[:, 1]
-
-    data["Prediction"] = predictions
-    data["Fraud Probability"] = probabilities
 
     def risk_label(p):
         if p < 0.3:
